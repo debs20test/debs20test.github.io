@@ -215,6 +215,32 @@
 
 
 	
+<script>
+$(document).ready(function(){
+  
+  $("a").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
 <section id="intro">
   <div class="container">
     <div class="row">
@@ -324,8 +350,8 @@
                 <p>KEYNOTE
 </p>
                 <div class="user">
-                  <a href="https://debs20test.github.io/keynote-speakers/#Tamer-%c3%96zsu"><img src="https://debs20test.github.io/img/speakers/speaker1.jpg" width="20%" alt="Pepole"></a>
-                  <p><span>Tamer Özsu</span> <uni>University of Waterloo</uni> <tit><a href="https://debs20test.github.io/keynote-speakers/#Tamer-%c3%96zsu">Title: Streaming Graph Processing and Analytics</a></tit></p>
+                  <a href="/keynote-speakers/#Tamer"><img src="https://debs20test.github.io/img/speakers/speaker1.jpg" width="20%" alt="Pepole"></a>
+                  <p><span>Tamer Özsu</span> <uni>University of Waterloo</uni> <tit><a href="/keynote-speakers/#Tamer">Title: Streaming Graph Processing and Analytics</a></tit></p>
                 </div>
             </div>
             
@@ -333,8 +359,8 @@
                 <p>KEYNOTE
 </p>
                 <div class="user">
-                  <a href="https://debs20test.github.io/keynote-speakers/#Joelle-Pineau"><img src="https://debs20test.github.io/img/speakers/speaker2.jpg" width="20%" alt="Pepole"></a>
-                  <p><span>Joelle Pineau</span> <uni>McGill University</uni> <tit><a href="https://debs20test.github.io/keynote-speakers/#Joelle-Pineau">Building Reproducible, Reusable, and Robust Machine Learning Software</a></tit></p>
+                  <a href="/keynote-speakers/#Joelle"><img src="https://debs20test.github.io/img/speakers/speaker2.jpg" width="20%" alt="Pepole"></a>
+                  <p><span>Joelle Pineau</span> <uni>McGill University</uni> <tit><a href="/keynote-speakers/#Joelle">Building Reproducible, Reusable, and Robust Machine Learning Software</a></tit></p>
                 </div>
             </div>
             

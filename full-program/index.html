@@ -209,6 +209,32 @@
 
 
 
+<script>
+$(document).ready(function(){
+  
+  $("a").on('click', function(event) {
+
+    
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+
+      
+      var hash = this.hash;
+
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
 <section id = "full-program">
   <div class="container">
     <div class="row">
@@ -316,7 +342,7 @@
             <div>
               <h1>Session Details</h1>
             </div>
-            <div id="tutorial1">
+            <div id="tutorial1" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -325,7 +351,7 @@
               <p align="justify">The Role of Event-Time Analysis Order in Data Streaming<br>Vincenzo Gulisano (Chalmers University of Technology); Bastian Havers (Chalmers University of Technology &amp; Volvo Cars); Dimitrios Palyvos-Giannas, Marina Papatriantafilou (Chalmers University of Technology)</p>
               
             </div>
-            <div id="doctoral-symposium">
+            <div id="doctoral-symposium" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -338,7 +364,7 @@
               <p align="justify">Dynamic Scaling of Distributed Data-flows under Uncertainty - Reflections of a financial analyst on the application of finance principles to Systems research<br>Stuart Jamieson (Newcastle University, UK)</p>
               
             </div>
-            <div id="tutorial2">
+            <div id="tutorial2" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -347,7 +373,7 @@
               <p align="justify">Blockchain Consensus Unraveled: Virtues and Limitations<br>Suyash Gupta (University of California, Davis); Jelle Hellings (University of California, Davis); Sajjad Rahnama (University of California, Davis); Mohammad Sadoghi (University of California, Davis)</p>
               
             </div>
-            <div id="keynote1">
+            <div id="keynote1" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -356,7 +382,7 @@
               <p align="justify">Streaming Graph Processing and Analytics<br>Tamer Özsu (University of Waterloo)</p>
               
             </div>
-            <div id="research1">
+            <div id="research1" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -369,7 +395,7 @@
               <p align="justify">The Kaiju Project: Enabling Event-Driven Observability<br>Mario Scrocca (Politecnico di Milano); Riccardo Tommasini (University of Tartu); Alessandro Margara, Emanuele Della Valle (Politecnico di Milano); Sherif Sakr (University of Tartu)</p>
               
             </div>
-            <div id="research2">
+            <div id="research2" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -384,7 +410,7 @@
               <p align="justify">Mechanisms for Outsourcing Computation via a Decentralized Market<br>Scott Eisele (Vanderbilt University); Taha Eghtesad, Nicholas Troutman, Aron Laszka (University of Houston); Abhishek Dubey (Vanderbilt University)</p>
               
             </div>
-            <div id="keynote2">
+            <div id="keynote2" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -393,7 +419,7 @@
               <p align="justify">Building Reproducible, Reusable, and Robust Machine Learning Software<br>Joelle Pineau (Facebook AI Research, McGill University)</p>
               
             </div>
-            <div id="industry">
+            <div id="industry" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -408,7 +434,7 @@
               <p align="justify">Managing Geo-Distributed Stream Processing Pipelines for the IIoT with StreamPipes Edge Extensions<br>Patrick Wiener, Philipp Zehnder, Dominik Riemer (FZI Research Center for Information Technology)</p>
               
             </div>
-            <div id="grand-challenge-solutions">
+            <div id="grand-challenge-solutions" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -427,7 +453,7 @@
               <p align="justify">Optimized Parallel Implementation of Sequential Clustering-Based Event Detection<br>Gengtao Xu, Jing Qin, Runqi Tian (Boston University)</p>
               
             </div>
-            <div id="test">
+            <div id="test" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -436,7 +462,7 @@
               <p align="justify">TBA</p>
               
             </div>
-            <div id="research3">
+            <div id="research3" style="margin-bottom: 100px;">
 
             </div>
             <div>
@@ -447,7 +473,7 @@
               <p align="justify">FaasDom: A Benchmark Suite for Serverless Computing<br>Pascal Maissen (University of Fribourg, Switzerland); Pascal Felber, Peter Kropf, Valerio Schiavoni (University of Neuchatel, Switzerland)</p>
               
             </div>
-            <div id="research4">
+            <div id="research4" style="margin-bottom: 100px;">
 
             </div>
             <div style="margin-bottom:150px;">
